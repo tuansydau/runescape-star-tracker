@@ -7,7 +7,7 @@ export default function Home() {
 
   useEffect(() => {
     const fetchStars = async () => {
-      const response = await fetch('http://localhost:8080/api/scrape');
+      const response = await fetch('/api/scrape');
       const jsonData = await response.json();
       setStars(jsonData);
     };
